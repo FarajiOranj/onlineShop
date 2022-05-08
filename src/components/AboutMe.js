@@ -132,13 +132,13 @@ const AboutUs = () => {
               <span style={{ display: "inline-block" }}>
                 <span className={styles.explainer}>Name:</span> MohammadReza
               </span>
-              <span style={{ display: "inline-block", marginLeft: "20px" }}>
+              <span className={styles.lName}>
                 <span className={styles.explainer}>LastName:</span> Faraji
               </span>
             </p>
             <p className={styles.ageInfo}>
               <span className={styles.explainer}>Date of birth: </span>
-              26/11/2000
+              <span className={styles.date}>26/11/2000</span>
             </p>
             <p className={styles.skillsInfo}>
               <span className={styles.explainer2}>skills :</span>

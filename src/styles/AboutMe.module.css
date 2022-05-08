@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .box {
@@ -22,8 +21,6 @@
     -webkit-animation: AnimationName 30s ease infinite;
     -moz-animation: AnimationName 30s ease infinite;
     animation: AnimationName 30s ease infinite;
-
-
 }
 
 @-webkit-keyframes AnimationName {
@@ -69,7 +66,6 @@
 }
 
 .infoContainer {
-
     display: flex;
     opacity: 1;
     position: relative;
@@ -100,7 +96,11 @@
     top: 25px;
     left: 20px;
     transition: all 1s;
+}
 
+.lName {
+    display: inline-block;
+    margin-left: 20px;
 }
 
 .ageInfo {
@@ -110,7 +110,6 @@
     top: 65px;
     left: 17px;
     transition: all 1s;
-
 }
 
 .skillsInfo {
@@ -128,30 +127,19 @@
 
 .forBetterHover:hover .skillsInfo {
     opacity: 1;
-
 }
 
 .forBetterHover:hover .infoContainer {
-
     border-radius: 5% 30% 5% 30%;
-
-    /* border-top: 5px solid rgb(124, 94, 94);
-    border-left: 3px solid rgb(124, 94, 94); */
-
     transform: rotate(-90deg);
-
 }
 
 .forBetterHover:hover .logo {
     left: 110px;
     top: 24px;
-
 }
 
 .forBetterHover:hover img {
-
-    top: -70px;
-    right: 120px;
     transform: rotate(90deg);
 }
 
@@ -175,7 +163,6 @@
 .explainer2 {
     font-size: 17px;
     color: #a52e42;
-
 }
 
 .forBetterHover {
@@ -184,14 +171,11 @@
     left: 87.5px;
     width: 225px;
     height: 275px;
-    /* background: #000; */
 }
 
 .sR:hover {
     color: #4444af;
     text-shadow: 1px 1px 1px #c0b4b4;
-
-
 }
 
 .sJ:hover {
@@ -260,4 +244,94 @@
     .container {
         height: 100vh;
     }
+}
+
+@media (max-width:480px) {
+
+    .box {
+        height: 390px;
+        width: 320px;
+    }
+
+    .forBetterHover {
+        position: absolute;
+        top: 20px;
+        left: 80px;
+        width: 160px;
+        height: 235px;
+    }
+
+
+
+    .infoContainer {
+        width: 160px;
+        height: 180px;
+        border-radius: 8% 8% 32% 32%;
+    }
+
+    .logo {
+        top: 105px;
+        left: 17px;
+        width: 125px;
+        height: 125px;
+    }
+
+    .forBetterHover:hover .infoContainer {
+        border-radius: 8% 23% 8% 23%;
+    }
+
+
+    .forBetterHover:hover .logo {
+        left: 100px;
+        top: 27px;
+    }
+
+    .nameInfo {
+        top: 15px;
+        left: 7px;
+    }
+
+    .lName {
+        margin-top: 7px;
+    }
+
+    .date {
+        margin-left: 7px;
+    }
+
+    .ageInfo {
+        left: 40px;
+        top: 59px;
+    }
+
+    .nameInfo,
+    .ageInfo,
+    .skillsInfo,
+    .explainer {
+        font-size: 13px;
+    }
+
+    .explainer2 {
+        font-size: 14px;
+    }
+
+    .skillsInfo {
+        top: 85px;
+        right: 30px;
+        width: 164px;
+    }
+
+    .fedContainer {
+        top: 265px;
+    }
+
+    .fedContainer img {
+        width: 24px;
+        margin-right: 5px;
+    }
+
+    .extendTitle {
+        font-size: 21px;
+    }
+
 }
