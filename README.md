@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Important
 
-*please use Google chrome or Microsoft Edge for better UI...
+* please use Google chrome or Microsoft Edge for better UI...
 
 ## What Technologies i used ?
 
