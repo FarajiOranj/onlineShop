@@ -25,7 +25,6 @@
     transform: rotateY(-15deg) rotateX(20deg);
     text-shadow: 9px 9px 10px #756262;
     filter: drop-shadow(1px 1px 1000px rgb(88, 87, 87));
-
 }
 
 
@@ -35,8 +34,6 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-shadow: 1px 1px 2px #b39797;
     color: #6e2222;
-
-
 }
 
 @media (max-width:555px) {
