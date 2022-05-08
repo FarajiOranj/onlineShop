@@ -8,9 +8,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## What Technologies i used ?
 
-#### `React`
-#### `Redux`
-#### `CSS`
-#### `Sass`
-#### `JavaScript`
-#### `Rest Api`
+### `React`
+### `Redux`
+### `CSS`
+### `Sass`
+### `JavaScript`
+### `Rest Api`
