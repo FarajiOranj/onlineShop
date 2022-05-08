@@ -1,0 +1,28 @@
+.swiperImgSkeleton {
+    height: 105px;
+}
+
+
+.swiperTitleSkeleton {
+    margin-top: 7%;
+    height: 18px;
+    text-align: center;
+
+}
+
+.swiperPriceSkeleton {
+    margin-top: 8%;
+    height: 18px;
+    text-align: center;
+}
+
+@media (max-width: 570px) {
+    .swiperTitleSkeleton {
+        margin-left: 6%;
+    }
+
+    .swiperPriceSkeleton {
+        margin-left: 7%;
+
+    }
+}

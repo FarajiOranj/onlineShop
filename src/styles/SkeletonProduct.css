@@ -1,0 +1,118 @@
+.containerSkeleton {
+    width: 250px;
+    border: 1px solid silver;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    margin: 0 10px 50px;
+    text-align: center;
+    
+}
+
+
+.cardImage {
+    border-radius: 10px;
+
+    width: 220px;
+    height: 200px;
+    margin-top: 15px;
+}
+
+.title {
+    margin-top: 35px;
+    margin-right: 120px;
+    width: 100px;
+    height: 19px;
+}
+
+.price {
+    margin-top: 15px;
+    margin-right: 160px;
+    width: 60px;
+    height: 19px;
+}
+
+
+
+.linkSkelet {
+    width: 50px;
+    height: 30px;
+    margin-bottom: 24px;
+    margin-top: 30px;
+}
+
+
+
+.buttonAdd {
+    margin-right: 15px;
+    height: 30px;
+    width: 120px;
+    border-radius: 4px;
+    margin-left: 40px;
+    margin-right: 12px;
+    margin-bottom: 24px;
+    margin-top: 30px;
+}
+
+
+
+
+@media (max-width: 1000px) {
+    .containerSkeleton {
+        width: 45%;
+    }
+
+    .buttonsOfSkeleton {
+        width: 200px;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .containerSkeleton {
+        width: 45%;
+    }
+
+    .title {
+        margin-right: 105px;
+
+    }
+
+    .price {
+        margin-right: 145px;
+    }
+
+    .cardImage {
+        width: 200px;
+    }
+
+    .linkSkelet {
+    margin-right: 12px;
+
+        width: 43.375px;
+        
+    }
+
+    .buttonAdd {
+        width: 107px;
+        margin-right: 0px;
+    }
+
+}
+
+@media (max-width: 555px) {
+    .containerSkeleton {
+        width: 70%;
+    }
+
+    .cardImage {
+        width: 230px;
+    }
+}
+
+@media (max-width: 400px) {
+    .containerSkeleton {
+        width: 90%;
+    }
+}

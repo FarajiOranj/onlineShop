@@ -1,0 +1,47 @@
+.container {
+
+    position: relative;
+    height: calc(100vh - 69px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.errContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background-color: transparent;
+}
+
+.error {
+    color: #221717;
+    display: block;
+    font-family: cursive;
+    font-size: 290px;
+    transform: rotateY(-15deg) rotateX(20deg);
+    text-shadow: 9px 9px 10px #756262;
+    filter: drop-shadow(1px 1px 1000px rgb(88, 87, 87));
+
+}
+
+
+
+.errMsg {
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 1px 1px 2px #b39797;
+    color: #6e2222;
+
+
+}
+
+@media (max-width:555px) {
+    .error {
+        font-size: 230px;
+    }
+
+}

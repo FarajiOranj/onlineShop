@@ -1,0 +1,283 @@
+.bannerContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.landingBanner {
+    width: 1600px;
+    height: 550px;
+}
+
+.filteredContainer {
+    display: flex;
+    background-color: azure;
+    position: relative;
+    justify-content: center;
+    margin: 75px auto;
+    width: 60vw;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 1px 1px 4px black;
+}
+
+
+.categoryContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1vw 0;
+    text-align: center;
+    margin: 0 2vw 0 0;
+}
+
+.categoryContainer img {
+    filter: invert(.13);
+    cursor: pointer;
+    width: 33%;
+    transition: all .3s ease;
+
+}
+
+.categoryContainer a {
+    cursor: auto;
+    
+}
+
+.categoryContainer p {
+    font-size: 1.15em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    margin-top: 10px;
+    display: block;
+    transition: all .3s ease;
+
+}
+
+.categoryContainer:hover p {
+    color: white;
+    text-shadow: 1px 0 5px black;
+}
+
+.categoryContainer:hover img {
+    filter: drop-shadow(1px -4px 7px rgb(190, 182, 182));
+    transform: scale(1.1);
+}
+
+
+.categoryContainer:last-child {
+    margin-right: 0;
+}
+
+.swiperFavContainer {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: 75px auto;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.swiperContentHeader {
+    position: absolute;
+    color: gray;
+    text-shadow: 1px 1px .5px;
+    top: -35px;
+    left: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.swiperContentHeader:hover {
+    color: rgb(103, 128, 94);
+    text-shadow: .5px .5px .5px #030303;
+}
+
+
+@media (max-width:1750px) {
+
+    .landingBanner {
+        width: 1400px;
+        height: 450px;
+    }
+}
+
+@media (max-width:1550px) {
+
+    .landingBanner {
+        width: 1300px;
+        height: 400px;
+    }
+
+}
+
+@media (max-width:1450px) {
+
+    .landingBanner {
+        width: 1200px;
+        height: 380px;
+    }
+}
+
+@media (max-width:1300px) {
+    .landingBanner {
+        width: 1100px;
+        height: 360px;
+    }
+
+}
+
+@media (max-width:1200px) {
+    .landingBanner {
+        width: 1000px;
+        height: 350px;
+    }
+
+    .filteredContainer {
+        width: 65vw;
+    }
+
+    .categoryContainer {
+        padding: 2vw 0;
+
+    }
+
+    .categoryContainer p {
+        font-size: 1em;
+    }
+
+    .categoryContainer img {
+        width: 40%;
+    }
+
+}
+
+@media (max-width:1150px) {
+    .landingBanner {
+        width: 900px;
+        height: 340px;
+    }
+
+}
+
+@media (max-width:1050px) {
+    .landingBanner {
+        width: 830px;
+        height: 330px;
+    }
+
+}
+
+@media (max-width:1000px) {
+    .landingBanner {
+        width: 768px;
+        height: 320px;
+    }
+
+    .filteredContainer {
+        width: 70vw;
+    }
+
+    .categoryContainer {
+        padding: 2vw 0;
+
+    }
+
+    .categoryContainer p {
+        font-size: .95em;
+    }
+
+    .categoryContainer img {
+        width: 42%;
+    }
+}
+
+@media (max-width:875px) {
+    .landingBanner {
+        width: 660px;
+        height: 300px;
+    }
+
+    .filteredContainer {
+        width: 71vw;
+    }
+
+
+}
+
+@media (max-width:768px) {
+
+
+    .landingBanner {
+        width: 650px;
+        height: 280px;
+    }
+
+    .swiperContentHeader {
+        font-size: 22px;
+        top: -32px;
+    }
+
+    .container {
+        margin-top: 100px;
+    }
+
+    .categoryContainer:first-child p {
+        align-self: center;
+        font-size: 1.1em;
+        margin-top: 20px;
+
+    }
+
+    .categoryContainer:not(:first-child) p {
+        margin-top: 30px;
+        font-size: 1.1em;
+    }
+
+    .categoryContainer img {
+        width: 50%;
+    }
+
+}
+
+@media (max-width:674px) {
+    .categoryContainer:nth-child(3) p {
+        margin-top: 20px;
+    }
+
+    .categoryContainer:last-child {
+        margin-right: 10px;
+    }
+
+    .categoryContainer:first-child {
+        margin-left: 10px;
+
+    }
+}
+
+@media (max-width:650px) {
+
+    .landingBanner {
+        width: 555px;
+        height: 250px;
+    }
+
+    .swiperContentHeader {
+        font-size: 20px;
+        top: -30px;
+    }
+
+    .container {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width:555px) {
+
+    .landingBanner {
+        width: 440px;
+        height: 200px;
+    }
+
+    .container {
+        margin-top: 100px;
+    }
+}
