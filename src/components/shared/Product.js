@@ -25,7 +25,7 @@ const Product = ({ data }) => {
     <div className={styles.container}>
       <img src={data.image} alt={data.name} className={styles.cardImage} />
       <h3 style={{ userSelect: "text" }}>{shorten(data.title)}</h3>
-      <p>{`${data.price} $`}</p>
+      <p>{`${data.price}${" "}$`}</p>
       <div className={styles.linkContainer}>
         <Link to={`/products/${data.id}`}>Details</Link>
         <div className={styles.buttonContainer}>
