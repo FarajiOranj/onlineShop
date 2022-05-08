@@ -71,9 +71,10 @@
 
 .complete {
   position: absolute;
-  top: 30%;
-  padding-left: 37%;
-  width: calc(100vw - 175px);
+  top: 40%;
+  left: 47%;
+  /* padding-left: 37%; */
+  /* width: calc(100vw - 175px); */
 }
 
 .complete h3 {
@@ -109,7 +110,12 @@
     margin: 120px 80px 50px;
   }
 
- 
+
+  .complete {
+    margin-top: 10px;
+    
+  }
+
 }
 
 @media (max-width: 1050px) {
@@ -117,12 +123,13 @@
     flex-direction: column-reverse;
     margin: 120px 80px 50px;
     align-items: center;
-    
+
   }
 
   .complete {
     margin-top: 120px;
-    position: static;}
+    position: static;
+  }
 
   .cartContainer {
     width: 100%;
@@ -133,7 +140,7 @@
     margin-bottom: 20px;
   }
 
- 
+
 }
 
 
@@ -143,17 +150,15 @@
     margin: 120px 40px 50px;
   }
 
-  .complete {
-    margin-top: 300px;}
-    
+
+
 }
 
 @media (max-width: 555px) {
   .container {
     margin: 120px 20px 50px;
   }
-  
-  .complete {
-    margin-left: -90px;}
+
+
 
 }
