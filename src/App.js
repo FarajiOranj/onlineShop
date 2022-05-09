@@ -19,25 +19,47 @@ import FilteredProducts from "./components/FilteredProducts";
 
 const App = () => {
   return (
-    <Provider store={store}>
-      <div>
-        <Burger />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/cart" element={<Store />} />
+    <>
+      {navigator.onLine ? (
+        <Provider store={store}>
+          <div>
+            <Burger />
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/signup" element={<Signup />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/cart" element={<Store />} />
 
-          <Route path="/products/category/:filtered" element={<FilteredProducts />} />
+              <Route
+                path="/products/category/:filtered"
+                element={<FilteredProducts />}
+              />
 
-          <Route path="/products/:id" element={<ProductDetails />} />
-          <Route path="/products/*" element={<Products />} />
-          <Route path="/aboutus" element={<AboutUs />} />
-          <Route path="/notfound" element={<NotFound />} />
-          <Route path="/*" element={<Navigate to="/notfound" />} />
-        </Routes>
-      </div>
-    </Provider>
+              <Route path="/products/:id" element={<ProductDetails />} />
+              <Route path="/products/*" element={<Products />} />
+              <Route path="/aboutus" element={<AboutUs />} />
+              <Route path="/notfound" element={<NotFound />} />
+              <Route path="/*" element={<Navigate to="/notfound" />} />
+            </Routes>
+          </div>
+        </Provider>
+      ) : (
+        <h2
+          style={{
+            textAlign: "center",
+            width: "100vw",
+            height: "100vh",
+            lineHeight: "100vh",
+            fontFamily: "sans-serif",
+            color: "#bb0000",
+            textShadow: "1px 1px 1.1px black",
+            fontStyle: "italic",
+          }}
+        >
+          Please Connect to Internet !
+        </h2>
+      )}
+    </>
   );
 };
 

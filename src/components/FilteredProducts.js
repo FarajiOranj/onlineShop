@@ -39,7 +39,6 @@ const FilteredProducts = () => {
   useEffect(() => {
     dispatch(fetchFilteredDATA(filtered));
 
-    console.log(typeof filtered);
   }, []);
 
   return (
