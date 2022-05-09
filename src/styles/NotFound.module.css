@@ -42,3 +42,10 @@
     }
 
 }
+
+@media (max-width:480px) {
+    .error {
+        font-size: 170px;
+    }
+
+}
