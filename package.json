@@ -8,7 +8,6 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.26.1",
     "node-sass": "^7.0.1",
-    "query-string": "^7.1.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-loading-skeleton": "^3.1.0",
@@ -22,7 +21,6 @@
     "redux-thunk": "^2.4.1",
     "styled-components": "^5.3.5",
     "swiper": "^8.1.4",
-    "uuid": "^8.3.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

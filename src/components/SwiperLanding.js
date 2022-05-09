@@ -25,22 +25,13 @@ const SwiperLanding = ({ data }) => {
           clickable: true,
         }}
         breakpoints={{
-          "@0.00": {
-            slidesPerView: 2,
-            spaceBetween: 10,
-          },
-          "@0.75": {
-            slidesPerView: 3,
-            spaceBetween: 20,
-          },
-          "@1.00": {
-            slidesPerView: 4,
-            spaceBetween: 40,
-          },
-          "@1.50": {
-            slidesPerView: 5,
-            spaceBetween: 50,
-          },
+          1600: { slidesPerView: 5, spaceBetween: 20 },
+          1200: { slidesPerView: 4, spaceBetween: 10 },
+          1000: { slidesPerView: 3, spaceBetween: 10 },
+          768: { slidesPerView: 3, spaceBetween: 3 },
+          480: { slidesPerView: 2, spaceBetween: 1 },
+          400: { slidesPerView: 1, spaceBetween: 3 },
+          300: { slidesPerView: 1, spaceBetween: 1 },
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
