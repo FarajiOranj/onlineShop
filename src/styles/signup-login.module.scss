@@ -12,6 +12,7 @@
   border: $borderStyle;
   box-shadow: 2px 2px 2px #c9d4e1;
   background: #fff;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 50px;
   margin: 50px;
@@ -59,6 +60,8 @@
     height: 10px;
     text-align: left;
     margin-top: 5px;
+  width: -moz-fit-content;
+
     width: fit-content;
     font-size: 0.75rem;
     color: #d46464;
