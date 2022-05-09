@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useTitle } from "./helpers/helper";
 import { Link } from "react-router-dom";
 import validation from "./validation";
 
@@ -9,6 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 import notify from "./toast";
 
 const Signup = () => {
+  useTitle("Signup Section");
   const [data, setData] = useState({
     userName: "",
     email: "",

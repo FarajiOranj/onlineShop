@@ -25,4 +25,8 @@ const remover = (state, id) => {
   }
 };
 
-export { shorten, isInCard, remover };
+const useTitle = (title) => {
+  document.title = `Online Shop | ${title}`;
+};
+
+export { shorten, isInCard, remover, useTitle };

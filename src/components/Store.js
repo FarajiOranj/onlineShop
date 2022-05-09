@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
+import { useTitle } from "./helpers/helper";
 
 // Styles
 import styles from "../styles/Store.module.css";
@@ -12,6 +13,7 @@ import SelectedItems from "./Cart";
 import { clear, checkout } from "../redux/cartCounter/cartAction";
 
 const Store = () => {
+  useTitle("Payment Section")
   const state = useSelector((state) => state.cartState);
   const dispatch = useDispatch();
   return (

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { useTitle } from "./helpers/helper";
 
 // Styles & Img
 import styles from "../styles/AboutMe.module.css";
@@ -121,6 +122,7 @@ const Div = styled.div`
 `;
 
 const AboutUs = () => {
+  useTitle("AboutMe");
   let [socials, setSocial] = useState(false);
   return (
     <div className={styles.container}>

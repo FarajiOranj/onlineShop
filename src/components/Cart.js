@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 
+
 // Styles & Img
 import styles from "../styles/Cart.module.css";
 import trashIcon from "../images/trash.svg";

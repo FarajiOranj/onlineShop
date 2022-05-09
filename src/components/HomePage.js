@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import fetchDATA from "../redux/swiper/swiperAction";
+import { useTitle } from "./helpers/helper";
 
 // styles & Img
 import styles from "../styles/HomePage.module.css";
@@ -17,6 +18,7 @@ import SwiperLanding from "./SwiperLanding";
 import SkeletonSwiperContainer from "./SkeletonSwiperContainer";
 
 const HomePage = () => {
+  useTitle("HomePage");
   const data = useSelector((state) => state.swiperState);
   const dispatch = useDispatch();
   useEffect(() => {

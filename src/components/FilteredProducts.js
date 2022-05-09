@@ -4,6 +4,7 @@ import fetchFilteredDATA from "../redux/filteredProducts/filteredAction";
 import { useParams } from "react-router-dom";
 import Product from "./shared/Product";
 import SkeletonContainer from "./SkeletonContainer";
+import { useTitle } from "./helpers/helper";
 
 import styled from "styled-components";
 
@@ -33,12 +34,12 @@ const Div = styled.div`
 
 const FilteredProducts = () => {
   const { filtered } = useParams();
+  useTitle(`${filtered}`);
   const data = useSelector((state) => state.filteredState);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchFilteredDATA(filtered));
-
   }, []);
 
   return (

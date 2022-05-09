@@ -2,11 +2,13 @@ import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 import styles from "../styles/ProductDetails.module.css";
+import { useTitle } from "./helpers/helper";
 
 //* Components
 import Loading from "./Loading";
 
 const ProductDetails = () => {
+  useTitle("Product Details");
   const { id } = useParams();
   const [data, setData] = useState({ isLoading: true });
 

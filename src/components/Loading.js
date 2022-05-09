@@ -1,9 +1,11 @@
 import React from "react";
+import { useTitle } from "./helpers/helper";
 
 // Styles
 import styles from "../styles/Loading.module.css";
 
 const Loading = () => {
+  useTitle("Please Wait...");
   return (
     <div className={styles.container}>
       <div className={styles.topLoader}></div>

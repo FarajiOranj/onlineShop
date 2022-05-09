@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import styled from "styled-components";
-
+import { useTitle } from "./helpers/helper";
 //* Components
 import Product from "./shared/Product";
 import SkeletonContainer from "./SkeletonContainer";
@@ -34,11 +34,13 @@ const Div = styled.div`
   }
 `;
 const Products = () => {
+  useTitle("Products");
   const data = useSelector((state) => state.productState);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (!data.products.length) setTimeout(()=> dispatch(fetchProductData()),100) ;
+    if (!data.products.length)
+      setTimeout(() => dispatch(fetchProductData()), 100);
   }, []);
   return (
     <>

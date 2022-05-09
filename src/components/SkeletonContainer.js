@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { useTitle } from "./helpers/helper";
 
 //* Product Skeleton Template
 import SkeletonTempProducts from "../components/Templates/SkeletionTempProducts";
@@ -29,6 +30,7 @@ const Div = styled.div`
 `;
 
 const SkeletonContainer = () => {
+  useTitle("Loading Products");
   return (
     <Div>
       <SkeletonTempProducts />

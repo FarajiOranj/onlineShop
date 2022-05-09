@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import {useTitle} from "./helpers/helper"
+
 
 // Styles
 import styles from "../styles/signup-login.module.scss";
@@ -13,6 +15,7 @@ import notify from "./toast";
 import { Link } from "react-router-dom";
 
 const Login = () => {
+  useTitle("Login Section")
   const [data, setData] = useState({
     email: "",
     password: "",
