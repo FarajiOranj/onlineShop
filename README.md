@@ -1,6 +1,6 @@
 # Online Shop - by `MohammadReza Faraji Oranj`
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Online Project View: [Show in Vercel](https://online-shop-eta.vercel.app).
 
 ## Important
 
