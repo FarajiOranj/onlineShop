@@ -8,9 +8,4 @@ Online Project View: [Show in Vercel](https://online-shop-eta.vercel.app).
 
 ## What Technologies i used ?
 
-### `React`
-### `Redux`
-### `CSS`
-### `Sass`
-### `JavaScript`
-### `Rest Api`
+### `React`, `JavaScript`, `Redux`, `Rest Api`, `CSS`, `Sass`  
